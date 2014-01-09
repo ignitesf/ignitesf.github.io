@@ -1,0 +1,63 @@
+.promo{
+    max-height:500px;
+    overflow:hidden;
+    position:relative;
+    background:#000;
+    margin-bottom:50px;
+}
+.promo-title{
+    position:absolute;
+    top:50px;
+    left:150px;
+    color:#fff;
+    max-width:900px;
+    margin:auto;
+}
+.promo-title h2{
+    color:#fff;
+    font-size:96px;
+    font-weight:bold;
+    position:absolute;
+    left:-1500px;
+    width:900px;
+    transition:  all 1s;
+}
+.promo-title h2.show{
+    left:0px;
+    transition:all 1sec;
+}
+
+video{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    opacity:0.6;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+
+.top-bar{
+    height:75px;
+    background:#fff;
+    border-bottom:solid 1px #333;
+}
+
+.top-bar .title-area{
+    margin-right:40px;
+}
+
+.top-bar-section li a:not(.button):hover{
+    background:#fff;
+    color:#a3191b;
+
+}
+.top-bar-section li a:not(.button){
+    background:#fff;
+    padding:15px 25px 0px 25px;
+}
+.top-bar-section ul li > a{
+    font-size:22px;
+    color:#e3191b;
+    background:#fff;
+
+}

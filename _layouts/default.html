@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <script src="js/modernizr.js"></script>
+        <link rel="stylesheet" href="css/ignitesf.css" />
+    </head>
+    <body>
+      <div class="fixed">
+        <nav class="top-bar" data-topbar>
+          <div class="large-8 large-centered columns">
+            <ul class="title-area">
+              <li class="name">
+                <a href="#"><img src="/imgs/ignite_logo.png" style="height:65px;"></a>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="left">
+                <li><a href="#">Speak</a></li>
+                <li><a href="#">Attend</a></li>
+                <li><a href="#">Past Events</a></li>
+              </ul>
+            </section>
+          </div>
+        </nav>
+      </div>
+
+      <div class="promo">
+        <video loop="loop" autoplay="true">
+          <source src="/media/promo.mp4" type="video/mp4" />
+        </video>
+
+
+        <div class="promo-title">
+          <h2>Ignite is a night of speedy presentions. </h2>
+          <h2>20 slides. <br/> 15 sec per slide. <br /> 5 mins.</h2>
+          <h2>Enlighten us, <br />but make it quick!</h2>
+        </div>
+
+      </div>
+
+
+      <div class="content large-8 large-centered columns">
+        {{ content }}
+      </div>
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

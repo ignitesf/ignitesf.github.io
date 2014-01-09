@@ -1,0 +1,28 @@
+---
+layout: default
+title: Ignite San Francisco
+---
+
+
+
+<div class="row about">
+  <p class="large-8 columns">Ignite San Francisco is a night of speedy presentations. Presenting on a subject of their choice, speakers have exactly 5 minutes to teach something, enlighten us, or simply inspire but the twist is they have 20 slides that auto-advancing every 15 seconds.</p>
+
+  <div class="large-4 columns">SIGN UP</div>
+</div>
+
+<div class="row sponsors">
+  <div class="large-8 columns">LOGO, LOGO LOGO</div>
+  <div class="large-4 columns">Ignite San Francisco is 100% volunteer run. We do it with some help from these great sponsors!</div>
+</div>
+
+<div id="videos">
+  <h1>Ignites</h1>
+  <ul class="videos">
+    {% for p in site.pages %}
+    {% if p.layout == "video" %}
+      <li><span>{{ p.date | date_to_string }}</span> &raquo; <a href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
