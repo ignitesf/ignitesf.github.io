@@ -8,7 +8,28 @@ title: Ignite San Francisco
 <div class="row about">
   <p class="large-8 columns">Ignite San Francisco is a night of speedy presentations. Presenting on a subject of their choice, speakers have exactly 5 minutes to teach something, enlighten us, or simply inspire but the twist is they have 20 slides that auto-advancing every 15 seconds.</p>
 
-  <div class="large-4 columns">SIGN UP</div>
+  <div class="large-4 columns">Get Emails about upcoming events:
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="http://ignitesanfrancisco.us2.list-manage.com/subscribe/post?u=a6f785ee4e1b93c767a41d660&amp;id=307b345ed9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <div class="mc-field-group">
+	      <label for="mce-EMAIL"> </label>
+	      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+	    <div id="mce-responses" class="clear">
+		  <div class="response" id="mce-error-response" style="display:none"></div>
+		  <div class="response" id="mce-success-response" style="display:none"></div>
+	    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_a6f785ee4e1b93c767a41d660_307b345ed9" value=""></div>
+	    <div class="clear"><input type="submit" value="Join the mailing list" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+
+  </div>
 </div>
 
 <div class="row sponsors">
@@ -16,13 +37,34 @@ title: Ignite San Francisco
   <div class="large-4 columns">Ignite San Francisco is 100% volunteer run. We do it with some help from these great sponsors!</div>
 </div>
 
-<div id="videos">
-  <h1>Ignites</h1>
-  <ul class="videos">
-    {% for p in site.pages %}
-    {% if p.layout == "video" %}
+<div class="row attending">
+  <div class="large-8 columns">
+    <h1>Attending Ignite SF</h1>
+    <p> Ignite SF 9 is March 27 at the Brava Theater. <a href="">Tickets are $10 and available now.</a></p>
+  </div>
+  <div class="large-4 columns"></div>
+</div>
+
+
+
+<div class="row speaking">
+  <div class="large-8 columns">
+    <h1>Speak at Ignite SF</h1>
+    <p>Ignite is about sharing your interests and passions with the community. Teach us something new, explain something your facinated by, enlighten us but make it quick. Each speaker gets 20 slides and 15 secs per slide. The slides automatically advnace. It's a format the keeps things lively and interesting. Want to speak at the next event? Submit your talk idea here:</p>
+  </div>
+  <div class="large-4 columns"></div>
+</div>
+
+
+<div class="row videos">
+  <div class="large-8 columns">
+    <h1>Past Ignites</h1>
+    <ul class="videos">
+      {% for p in site.pages %}
+      {% if p.layout == "video" %}
       <li><span>{{ p.date | date_to_string }}</span> &raquo; <a href="{{ p.url }}">{{ p.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </div>
