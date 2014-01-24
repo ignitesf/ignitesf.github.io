@@ -65,3 +65,34 @@ video{
 body p{
     font-size:1.4em;
 }
+body p.small{
+    font-size:1em;
+}
+div.aboutSpeaker{
+    padding:40px 20px 0px;
+    border-top:solid 1px #ccc;
+    color:#333;
+}
+div.spark{
+    margin-top:40px;
+}
+div.speakername{
+    color:#666;
+}
+
+div.getinvolved{
+    border-top:solid 1px #ccc;
+    margin-top:40px;
+    padding-top:20px;
+}
+
+div.getinvolved input.email{
+    width:60%;
+}
+div.getinvolved input{
+    float:left;
+}
+div.getinvolved input.button{
+    padding:9px 15px;
+    margin-left:20px;
+}

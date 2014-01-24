@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<div class="content large-8 large-centered columns spark">
+  <h2>{{ page.title }}</h2>
+  <h4 class="speakername">{{ page.name }}</h4>
+  <p class="meta">{{ page.eventDate }}</p>
+
+  <div class="video">
+    <!-- Embed youtube video --->
+<div class="flex-video widescreen">
+    <iframe width="800" height="450" src="//www.youtube.com/embed/{{ page.videoId }}?feature=player_detailpage&color=red&showinfo=0&theme=light&autohide=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
+    {{ page.videoUrl }}
+  </div>
+
+  <div class="aboutSpeaker">
+    <p>{{ content }} </p>
+  </div>
+
+
+  <div class="row getinvolved">
+
+    <div class="large-4 columns">
+      <h4>Speak at Ignite</h4>
+      <p class="small">Have something you are passionate about? Can you teach the rest of us about your interests?</p>
+      <p class="small"><a href="/#speak">Speak at Ignite!</a></p>
+    </div>
+
+    <div class="large-4 columns">
+      <h4>Attend the next Ignite</h4>
+      <p class="small">Ignite SF happens several times a year, our next email is {{ site.nextEvent }}. You shoud come!</p>
+      <p class="small"><a href="/#attend">Get info about attending the next event.</a></p>
+    </div>
+
+
+    <div class="large-4 columns">
+      <h4>Get email updates</h4>
+      <p class="small">The best way to keep up with Ignite SF. Dont worry we dont send many emails, just enough to keep you informed about upcoming events.</p>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="http://ignitesanfrancisco.us2.list-manage.com/subscribe/post?u=a6f785ee4e1b93c767a41d660&amp;id=307b345ed9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+          <div class="mc-field-group">
+	        <label for="mce-EMAIL"> </label>
+	        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+	      <div id="mce-responses" class="clear">
+		    <div class="response" id="mce-error-response" style="display:none"></div>
+		    <div class="response" id="mce-success-response" style="display:none"></div>
+	      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_a6f785ee4e1b93c767a41d660_307b345ed9" value=""></div>
+	      <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+
+    </div>
+
+
+  </div>
+
+
+</div>
