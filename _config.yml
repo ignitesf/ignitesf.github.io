@@ -1,3 +1,4 @@
 name: Ignite San Francisco
 markdown: redcarpet
 pygments: true
+relative_permalinks: false
