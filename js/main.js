@@ -10,7 +10,7 @@ $(function(){
         if(count > 2)
             count =0;
 
-        setTimeout(switchHeading, 5000);
+        setTimeout(switchHeading, 2500);
     }
     switchHeading();
 });

@@ -1,3 +1,12 @@
+.button{
+    font-size:1.2em;
+    background-color:#e01e26;
+    text-transform:uppercase;
+}
+.button:hover{
+    background-color:#a01e26;
+}
+
 .promo{
     max-height:500px;
     overflow:hidden;
@@ -39,35 +48,75 @@ video{
 .top-bar{
     height:75px;
     background:#fff;
-    border-bottom:solid 1px #333;
+    border-bottom:solid 1px #ddd;
+    width:100%;
 }
-
+.top-bar .row{
+    max-width:62.5rem
+}
 .top-bar .title-area{
     margin-right:40px;
+}
+.top-bar-section li{
+    background:#fff;
+}
+.top-bar-section li:hover{
+    background:#fff;
 }
 
 .top-bar-section li a:not(.button):hover{
     background:#fff;
-    color:#a3191b;
+    color:#e3191b;
 
 }
 .top-bar-section li a:not(.button){
     background:#fff;
-    padding:15px 25px 0px 25px;
+    padding:22px 5px 0px 2px;
+    margin:0px 18px;
+    line-height:32px;
 }
 .top-bar-section ul li > a{
-    font-size:22px;
-    color:#e3191b;
+    font-size:18px;
+    color:#999;
     background:#fff;
-
+    width:inherit;
+    line-height:22px;
 }
-
+.top-bar-section ul li > a.selected{
+    color:#e3191b;
+    border-bottom:solid 7px #e3191b;
+}
+.top-bar-section ul{
+    background:#fff;
+}
 body p{
     font-size:1.4em;
 }
 body p.small{
     font-size:1em;
 }
+
+
+div.section-about{
+    padding:80px 0px;
+}
+div.section-attending{
+    padding:80px 0px;
+    background:#555656;
+    color:#fff;
+}
+div.section-speaking{
+    padding:80px 0px;
+}
+div.section-attending h1{
+    color:#fff;
+}
+div.section-pastevents{
+    background:#e01e26;
+    color:#fff;
+    padding:80px 0px;
+}
+
 div.aboutSpeaker{
     padding:40px 20px 0px;
     border-top:solid 1px #ccc;
@@ -95,4 +144,27 @@ div.getinvolved input{
 div.getinvolved input.button{
     padding:9px 15px;
     margin-left:20px;
+}
+div.novideo{
+    text-align:center;
+    padding-top:100px;
+}
+div.novideo h2{
+    color:#999;
+}
+div.social{
+    text-align:right;
+}
+
+div.pastspark{
+    width:240px;
+    border:solid 1px #eee;
+    padding:30px;
+    margin:15px;
+    float:left;
+    height:200px;
+}
+div.pastignite{
+    border-top:solid 1px #ccc;
+    padding-top:30px;
 }
