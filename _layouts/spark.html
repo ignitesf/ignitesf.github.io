@@ -2,15 +2,32 @@
 layout: default
 ---
 <div class="content large-8 large-centered columns spark">
-  <h2>{{ page.title }}</h2>
-  <h4 class="speakername">{{ page.name }}</h4>
-  <p class="meta">{{ page.eventDate }}</p>
+  <div class="row">
+    <div class="large-8 columns">
+      <h2>{{ page.title }}</h2>
+      <h4 class="speakername">
+        <img src="{{ page.profileImageUrl }}" width="48">
+        {{ page.name }} -
+        <a href="https://twitter.com/{{ page.twitter }}">@{{page.twitter}}</a></h4>
+      <p class="eventdate">{{ page.eventDate }}</p>
+    </div>
+    <div class="large-4 columns social">
+      <a href="http://twitter.com/"><img src="/imgs/sharing-twitter.png"></a>
+      <a href="http://facebook.com"><img src="/imgs/sharing-fb.png"></a>
+    </div>
+  </div>
+
 
   <div class="video">
     <!-- Embed youtube video --->
-<div class="flex-video widescreen">
-    <iframe width="800" height="450" src="//www.youtube.com/embed/{{ page.videoId }}?feature=player_detailpage&color=red&showinfo=0&theme=light&autohide=1" frameborder="0" allowfullscreen></iframe>
-</div>
+    <div class="flex-video widescreen">
+
+      {% if page.videoId %}
+      <iframe width="800" height="450" src="//www.youtube.com/embed/{{ page.videoId }}?feature=player_detailpage&color=red&showinfo=0&theme=light&autohide=1" frameborder="0" allowfullscreen></iframe>
+      {% else %}
+      <div class="novideo"><h2>Video coming soon</h2></div>
+      {% endif %}
+    </div>
 
     {{ page.videoUrl }}
   </div>
