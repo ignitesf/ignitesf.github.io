@@ -12,7 +12,7 @@
     overflow:hidden;
     position:relative;
     background:#000;
-    margin-bottom:50px;
+    margin-bottom:0px;
 }
 .promo-title{
     position:absolute;
@@ -95,15 +95,35 @@ body p{
 body p.small{
     font-size:1em;
 }
-
+input.email{
+    width:300px;
+    display:inline;
+    font-size:22px;
+    padding:10px;
+    height:34px;
+}
+div.email-signup{
+    margin-top:15px;
+}
+div.email-signup label{
+    float:left;
+    padding:10px 20px 5px 0px;
+    font-size:18px;
+    font-weight:bold;
+}
+div.email-signup input.button{
+    padding:6px 20px;
+    margin-left:10px;
+}
 
 div.section-about{
     padding:80px 0px;
 }
 div.section-attending{
-    padding:80px 0px;
+    padding:0px 0px;
     background:#555656;
     color:#fff;
+    position:relative;
 }
 div.section-speaking{
     padding:80px 0px;
@@ -167,4 +187,15 @@ div.pastspark{
 div.pastignite{
     border-top:solid 1px #ccc;
     padding-top:30px;
+}
+
+div.attending-info{
+    position:absolute;
+    right:0px;
+    top:0px;
+    padding:10px 100px 14px 0px;
+    background:#555656;
+}
+.submit-topic{
+    margin-top:125px;
 }
