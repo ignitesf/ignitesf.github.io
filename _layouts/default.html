@@ -20,11 +20,19 @@
                 </li>
               </ul>
               <section class="top-bar-section">
-                <ul class="right">
+                <div data-magellan-expedition="fixed" style="background:none;">
+                  <dl class="sub-nav right">
+                    <dd data-magellan-arrival="about"><a href="/#about">About</a></dd>
+                    <dd data-magellan-arrival="attend"><a href="/#attend">Attend</a></dd>
+                    <dd data-magellan-arrival="speak"><a href="/#speak">Speak</a></dd>
+                    <dd data-magellan-arrival="pastignites"><a href="/#pastignites">Past Ignites</a></dd>
+                  </dl>
+                </div>
+<!--                <ul class="right">
                   <li><a href="/#speak" class="selected">Speak</a></li>
                   <li><a href="/#attend">Attend</a></li>
                   <li><a href="/#pastIgnites">Past Events</a></li>
-                </ul>
+                </ul>-->
               </section>
           </div>
         </nav>
@@ -34,6 +42,7 @@
 
         <script src="/js/jquery.js"></script>
         <script src="/js/foundation.min.js"></script>
+        <script src="/js/foundation/foundation.magellan.js"></script>
         <script>
           $(document).foundation();
         </script>
