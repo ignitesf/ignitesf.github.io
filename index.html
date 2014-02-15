@@ -89,8 +89,12 @@ title: Ignite San Francisco
 
         {% if p.layout == "spark" %}
         {% if p.ignitesf == 8 %}
-        <div class="pastspark" style="background:url('http://img.youtube.com/vi/{{ p.videoId }}/1.jpg');background-size: contain;">
-          <h4><a href="{{p.url}}">{{p.title}}</a></h4>
+        <div class="pastspark" >
+          <div class="sparktitle">
+            <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/1.jpg" />
+            <h4><a href="{{p.url}}">{{p.title}}</a></h4>
+          </div>
+          <div class="clear"></div>
           <h6><img src="{{p.profileImageUrl}}" width="48"> {{p.name}}</h6>
         </div>
 
