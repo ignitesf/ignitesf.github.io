@@ -18,8 +18,11 @@ ul.title-area img{
     border-radius:0px;
     line-height:1.8em;
     border-radius:0px;
+    padding:5px;
     border-bottom:solid 5px #fff;
     -webkit-transition:all 100ms;
+    -moz-transition:all 100ms;
+    transition:100ms;
 }
 .sub-nav dd.active a{
     color:#333;
@@ -28,6 +31,8 @@ ul.title-area img{
     padding:5px;
     border-radius:0px;
     -webkit-transition:all 100ms;
+    -moz-transition:all 100ms;
+    transition:all 50ms;
 }
 .sub-nav dd.active a:hover{
     background:#fff;
