@@ -6,6 +6,10 @@
 .button:hover{
     background-color:#a01e26;
 }
+ul.title-area img{
+    height:65px;
+}
+
 .sub-nav{
     overflow:visible;
 }
@@ -19,7 +23,6 @@
 }
 .sub-nav dd.active a{
     color:#333;
-    font-size:20px;
     background:#fff;
     border-bottom:solid 5px #e01e26;
     padding:5px;

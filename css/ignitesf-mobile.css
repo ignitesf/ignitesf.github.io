@@ -7,3 +7,23 @@ div.pastspark{
     width:100%;
     margin:10px 5px 10px 0px;
 }
+
+div.fixednav{
+    position:fixed;
+    top:0px;
+}
+.sub-nav{
+    margin-top:28px;
+}
+.sub-nav dd a{
+    font-size:14px;
+}
+div.top-bar{
+    height:95px;
+}
+div.mainnav{
+    background:#fff;
+}
+ul.title-area img{
+    height:40px;
+}
