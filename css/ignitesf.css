@@ -6,7 +6,30 @@
 .button:hover{
     background-color:#a01e26;
 }
-
+.sub-nav{
+    overflow:visible;
+}
+.sub-nav dd a{
+    font-size:20px;
+    border-radius:0px;
+    line-height:1.8em;
+    border-radius:0px;
+    border-bottom:solid 5px #fff;
+    -webkit-transition:all 100ms;
+}
+.sub-nav dd.active a{
+    color:#333;
+    font-size:20px;
+    background:#fff;
+    border-bottom:solid 5px #e01e26;
+    padding:5px;
+    border-radius:0px;
+    -webkit-transition:all 100ms;
+}
+.sub-nav dd.active a:hover{
+    background:#fff;
+    color:#999;
+}
 .promo{
     max-height:500px;
     overflow:hidden;
@@ -124,6 +147,7 @@ div.section-attending{
     background:#555656;
     color:#fff;
     position:relative;
+
 }
 div.section-speaking{
     padding:80px 0px;
@@ -195,6 +219,7 @@ div.attending-info{
     top:0px;
     padding:10px 100px 14px 30px;
     background:#555656;
+
 }
 .submit-topic{
     margin-top:125px;
