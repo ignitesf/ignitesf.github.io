@@ -3,15 +3,18 @@ layout: default
 ---
 <div class="content large-8 large-centered columns spark">
   <div class="row">
-    <div class="large-8 columns">
+    <div class="large-10 columns">
       <h2>{{ page.title }}</h2>
       <h4 class="speakername">
         <img src="{{ page.profileImageUrl }}" width="48">
-        {{ page.name }} -
-        <a href="https://twitter.com/{{ page.twitter }}">@{{page.twitter}}</a></h4>
+        {{ page.name }}
+        {% if page.twitter %}-
+        <a href="https://twitter.com/{{ page.twitter }}">@{{page.twitter}}</a>
+        {% endif %}
+      </h4>
       <p class="eventdate">{{ page.eventDate }}</p>
     </div>
-    <div class="large-4 columns social">
+    <div class="large-2 columns social">
       <a href="http://twitter.com/"><img src="/imgs/sharing-twitter.png"></a>
       <a href="http://facebook.com"><img src="/imgs/sharing-fb.png"></a>
     </div>
@@ -33,7 +36,7 @@ layout: default
   </div>
 
   <div class="aboutSpeaker">
-    <p>{{ content }} </p>
+    <p>{{ content | markdownify }} </p>
   </div>
 
 
