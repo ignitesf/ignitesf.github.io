@@ -3,10 +3,10 @@ layout: default
 title: Ignite San Francisco
 ---
 <div class="promo hide-for-small-only">
+  <div data-magellan-destination="about"></div>
   <video loop="loop" autoplay="true">
     <source src="/media/promo.mp4" type="video/mp4" />
   </video>
-
 
   <div class="promo-title">
     <h2>Ignite is a night of speedy presentions. </h2>
@@ -15,95 +15,102 @@ title: Ignite San Francisco
   </div>
 
 </div>
+<a name="about" ></a>
 <div class="section-about">
   <div class="row about">
     <div class="content large-12 large-centered columns">
-      <a name="about"></a>
-      <h1 data-magellan-destination="about">About</h1>
-        <p>Ignite San Francisco is a night of speedy presentations. Presenting on a subject of their choice, speakers have exactly 5 minutes to teach something, enlighten us, or simply inspire but the twist is they have 20 slides that auto-advancing every 15 seconds.</p>
+      <h1 >About</h1>
+      <p>Ignite San Francisco is a night of speedy presentations. Presenting on a subject of their choice, speakers have exactly 5 minutes to teach something, enlighten us, or simply inspire but the twist is they have 20 slides that auto-advancing every 15 seconds.</p>
     </div>
     <div class="large-12 columns">
 
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup" class="email-signup">
-          <form action="http://ignitesanfrancisco.us2.list-manage.com/subscribe/post?u=a6f785ee4e1b93c767a41d660&amp;id=307b345ed9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup" class="email-signup">
+        <form action="http://ignitesanfrancisco.us2.list-manage.com/subscribe/post?u=a6f785ee4e1b93c767a41d660&amp;id=307b345ed9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-            <div class="mc-field-group">
-	          <label for="mce-EMAIL"> Get emailed about upcoming events:</label>
-	          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-              <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </div>
-	        <div id="mce-responses" class="clear">
-		      <div class="response" id="mce-error-response" style="display:none"></div>
-		      <div class="response" id="mce-success-response" style="display:none"></div>
-	        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_a6f785ee4e1b93c767a41d660_307b345ed9" value=""></div>
+          <div class="mc-field-group">
+	        <label for="mce-EMAIL"> Get emailed about upcoming events:</label>
+	        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </div>
+	      <div id="mce-responses" class="clear">
+		    <div class="response" id="mce-error-response" style="display:none"></div>
+		    <div class="response" id="mce-success-response" style="display:none"></div>
+	      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_a6f785ee4e1b93c767a41d660_307b345ed9" value=""></div>
+          <div data-magellan-destination="attend"></div>
+        </form>
 
-          </form>
-        </div>
+      </div>
 
         <!--End mc_embed_signup-->
 
-      </div>
     </div>
   </div>
 </div>
-<a name="attend"></a>
+
+
+<a name="attend" ></a>
+<div style="padding:37px"></div>
 <div class="section-attending">
   <iframe class="hide-for-small-only" width='100%' height='350px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mickt.h4im93nh/mm/zoompan,zoomwheel,geocoder,share.html'></iframe>
   <div class="attending-info" >
-    <h1 data-magellan-destination="attend">Attend</h1>
+    <h1 >Attend</h1>
     <p class="date">March 27, 2014</p>
     <p>Ignite SF #9 <br>
       Brava Theater <br>
       2781 24th St.<br>
       Tickets are $10</p>
     <a href="https://ti.to/ignite-san-francisco/ignite-sf-9"><div class="button">Get Tickets</div></a>
+    <div  data-magellan-destination="speak"></div>
   </div>
-</div>
 
+</div>
 <a name="speak"></a>
 <div class="section-speaking">
   <div class="row speaking">
     <div class="large-8 medium-8 columns">
-      <h1 data-magellan-destination="speak">Speak</h1>
+      <h1 >Speak</h1>
       <p>Ignite is about sharing your interests and passions with the community. Teach us something new, explain something your facinated by, enlighten us but make it quick. Each speaker gets 20 slides and 15 secs per slide. The slides automatically advnace. It's a format the keeps things lively and interesting. Want to speak at the next event? Submit your talk idea here:</p>
     </div>
     <div class="large-4 medium-4 columns">
       <a href=""><div class="button submit-topic">Submit your topic</div></a>
     </div>
   </div>
+  <div data-magellan-destination="pastignites"></div>
 </div>
 
-<a name="pastignites"></a>
+<a name="pastignites"  ></a>
 <div class="section-pastevents">
   <div class="row videos">
     <div class="large-12 columns">
-      <h1  data-magellan-destination="pastignites">Past Events</h1>
+      <h1 >Past Events</h1>
       <div class="pastignite">
+        <p class="small right light">December 5th 2013</p>
         <h3>Ignite SF 8</h3>
-        <p class="small">December 5th 2013</p>
+
         {% for p in site.pages %}
 
         {% if p.layout == "spark" %}
         {% if p.ignitesf == 8 %}
         <div class="pastspark" >
           <div class="sparktitle">
-            <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/1.jpg" />
+            <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/mqdefault.jpg" />
             <h4><a href="{{p.url}}">{{p.title}}</a></h4>
+            <h6><img src="{{p.profileImageUrl}}" width="48"> {{p.name}}</h6>
           </div>
-          <div class="clear"></div>
-          <h6><img src="{{p.profileImageUrl}}" width="48"> {{p.name}}</h6>
+
         </div>
 
         {% endif %}
         {% endif %}
         {% endfor %}
-
+        <div class="clear"></div>
       </div>
 
     </div>
   </div>
+  <div data-magellan-destination="sponsors"></div>
 </div>
 
 <div class="section-sponsors">

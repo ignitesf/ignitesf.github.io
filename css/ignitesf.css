@@ -1,3 +1,6 @@
+.clear{
+    clear:both;
+}
 .button{
     font-size:1.2em;
     background-color:#e01e26;
@@ -148,7 +151,7 @@ div.email-signup input.button{
 }
 
 div.section-about{
-    padding:80px 0px;
+    padding:80px 0px 0px 0px;
 }
 div.section-attending{
     padding:0px 0px;
@@ -169,12 +172,15 @@ div.section-pastevents{
     padding:80px 0px;
 }
 div.section-pastevents h1,
-div.section-pastevents h3,
 div.section-pastevents h4{
     color:#fff;
 }
 div.section-pastevents a{
     color:#333;
+}
+div.section-sponsors{
+    padding:80px 0px;
+    min-height:300px;
 }
 
 div.aboutSpeaker{
@@ -217,34 +223,31 @@ div.social{
 }
 
 div.pastspark{
-    width:420px;
-    border:solid 1px #eee;
+
+    width:100%;
+    border-bottom:solid 1px #eee;
     padding:7px;
-    margin:15px;
+    margin:5px 0px;
     float:left;
-    height:180px;
+    min-height:100px;
     background:#fff;
     color:#999;
 }
+
 div.pastspark img.video{
-    width:120px;
-    height:90px;
-    padding-right:5px;
+    height:80px;
+    padding-right:15px;
     float:left;
 }
 div.pastspark h4{
     display:inline;
 }
-div.pastspark div.sparktitle{
-    height:100px;
-}
 div.pastignite{
     border-top:solid 1px #ccc;
     padding-top:30px;
-}
-div.pastignite h6{
-    float:right;
-
+    background:#fff;
+    color:#333;
+    padding:15px;
 }
 
 div.attending-info{
@@ -260,4 +263,7 @@ div.attending-info{
 }
 .submit-topic{
     margin-top:125px;
+}
+.light{
+    color:#999;
 }
