@@ -182,7 +182,9 @@ div.section-sponsors{
     padding:80px 0px;
     min-height:300px;
 }
-
+div.sponsors{
+    text-align:center;
+}
 div.aboutSpeaker{
     padding:40px 20px 0px;
     border-top:solid 1px #ccc;
