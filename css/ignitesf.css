@@ -74,7 +74,7 @@ video{
     position: relative;
     width: 100%;
     min-width: 1200px;
-    opacity:0.6;
+    opacity:1;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
