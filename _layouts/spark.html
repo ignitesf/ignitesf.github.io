@@ -52,7 +52,7 @@ twittercard: summary_large_image
     <div class="large-4 columns">
       <h4>Attend the next Ignite</h4>
       <p class="small">Ignite SF happens several times a year, our next event is {{ site.nextEvent }}. You shoud come!</p>
-      <p class="small"><a href="/#attend">Get info about attending the next event.</a></p>
+      <p class="small"><a href="/#attend">Attend the next Ignite!</a></p>
     </div>
 
 
@@ -66,20 +66,39 @@ twittercard: summary_large_image
           <div class="mc-field-group">
 	        <label for="mce-EMAIL"> </label>
 	        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button">
           </div>
 	      <div id="mce-responses" class="clear">
 		    <div class="response" id="mce-error-response" style="display:none"></div>
 		    <div class="response" id="mce-success-response" style="display:none"></div>
 	      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_a6f785ee4e1b93c767a41d660_307b345ed9" value=""></div>
-	      <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </form>
       </div>
 
       <!--End mc_embed_signup-->
 
     </div>
+  </div>
 
+
+  <div class="row relatedVideos">
+    <h3>More Videos from Ignite SF {{ page.ignitesf }}</h3>
+    {% for p in site.pages %}
+
+    {% if p.title == page.title or vidcount >= 1 %}
+    <!-- {% increment vidcount %} -->
+    {% endif %}
+    {% if p.layout == "spark" and p.ignitesf == page.ignitesf %}
+    {% if vidcount <= 4 and vidcount > 1 %}
+    <div class="large-4 columns relatedvid">
+      <h4><a href="{{ p.url }}">{{ p.title }}</a></h4>
+      <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/mqdefault.jpg" />
+    </div>
+    {% endif %}
+    {% endif %}
+
+    {% endfor %}
 
   </div>
 

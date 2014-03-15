@@ -269,3 +269,11 @@ div.attending-info{
 .light{
     color:#999;
 }
+.relatedVideos{
+  margin-top:20px;
+  border-top:solid 1px #eee;
+  padding-top:10px;
+}
+.relatedvid{
+    height:280px;
+}
