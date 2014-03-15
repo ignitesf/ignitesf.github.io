@@ -34,7 +34,7 @@
         <meta property="og:url" content="{{ page.url }}" >
         {% if page.twittercardimage %}
             <meta property="og:image" content="{{ page.twittercardimage }}" >
-        {% elseif page.videoId %}
+        {% else if page.videoId %}
             <meta property="og:image" content="http://img.youtube.com/vi/{{ page.videoId }}/maxresdefault.jpg" >
         {% endif %}
         {% if page.twittercarddescription %}
