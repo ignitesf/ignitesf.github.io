@@ -6,16 +6,25 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- twitter card -->
+
         {% if page.twittercard %}
+        <!-- twitter card -->
             <meta name="twitter:card" content="{{ page.twittercard }}">
             <meta name="twitter:site" content="@{{ site.twitter }}">
             {% if page.twitter %}
             <meta name="twitter:creator" content="@{{ page.twitter}}">
             {% endif %}
             <meta name="twitter:title" content="{{ page.title }}">
-            <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | strip_newlines }}">
-            <meta name="twitter:image:src" content="http://img.youtube.com/vi/{{ page.videoId }}//maxresdefault.jpg">
+            {% if page.twittercarddescription %}
+            <meta name="twitter:description" content="{{ page.twittercarddescription | truncate: 200 }}">
+            {% else %}
+            <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | strip_newlines | strip | truncate: 200 }}">
+            {% endif %}
+            {% if page.twittercardimage %}
+                <meta name="twitter:image:src" content="{{ page.twittercardimage }}">
+            {% else %}
+                <meta name="twitter:image:src" content="http://img.youtube.com/vi/{{ page.videoId }}//maxresdefault.jpg">
+            {% endif %}
         {% endif %}
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
