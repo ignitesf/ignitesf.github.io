@@ -27,6 +27,24 @@
             {% endif %}
         {% endif %}
 
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="{{ page.title }}" >
+        <meta property="og:type" content="article" >
+        <meta property="og:url" content="{{ page.url }}" >
+        {% if page.twittercardimage %}
+            <meta property="og:image" content="{{ page.twittercardimage }}" >
+        {% elseif page.videoId %}
+            <meta property="og:image" content="http://img.youtube.com/vi/{{ page.videoId }}/maxresdefault.jpg" >
+        {% endif %}
+        {% if page.twittercarddescription %}
+            <meta property="og:description" content="{{ page.twittercarddescription | truncate: 200 }}">
+        {% else %}
+            <meta property="og:description" content="{{ page.content | markdownify | strip_html | strip_newlines | strip | truncate: 200 }}">
+        {% endif %}
+        <meta property="og:site_name" content="{{ site.name }}" />
+        <meta property="fb:admins" content="{{ site.fbid }}" />
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/foundation.css" />
         <script src="/js/modernizr.js"></script>
