@@ -5,6 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
+
+        <!-- twitter card -->
+        {% if page.twittercard %}
+            <meta name="twitter:card" content="{{ page.twittercard }}">
+            <meta name="twitter:site" content="@{{ site.twitter }}">
+            {% if page.twitter %}
+            <meta name="twitter:creator" content="@{{ page.twitter}}">
+            {% endif %}
+            <meta name="twitter:title" content="{{ page.title }}">
+            <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | strip_newlines }}">
+            <meta name="twitter:image:src" content="http://img.youtube.com/vi/{{ page.videoId }}//maxresdefault.jpg">
+        {% endif %}
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/foundation.css" />
         <script src="/js/modernizr.js"></script>
