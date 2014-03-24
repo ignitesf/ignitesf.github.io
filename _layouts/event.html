@@ -45,8 +45,10 @@ twittercard: summary_large_image
               <div class="sparktitle">
                 {% if p.videoId %}
                 <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/mqdefault.jpg" />
-                {% endif %}
                 <h4><a href="{{p.url}}">{{p.title}}</a></h4>
+                {% else %}
+                <h4>{{p.title}}</h4>
+                {% endif %}
                 <h6><img src="{{p.profileImageUrl}}" width="48"> {{p.name}}</h6>
               </div>
 
