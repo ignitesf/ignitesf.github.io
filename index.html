@@ -9,7 +9,6 @@ redirect_from:
    - /proposals/
 ---
 <div class="promo hide-for-small-only">
-  <div data-magellan-destination="about"></div>
   <video loop="loop" autoplay="true">
     <source src="/media/promo.mp4" type="video/mp4" />
   </video>
@@ -19,8 +18,9 @@ redirect_from:
     <h2>20 slides. <br/> 15 sec per slide. <br /> 5 mins.</h2>
     <h2>Enlighten us, <br />but make it quick!</h2>
   </div>
-
+  <div data-magellan-destination="about"></div>
 </div>
+
 <a name="about" ></a>
 <div class="section-about">
   <div class="row about">
@@ -62,8 +62,8 @@ redirect_from:
   <iframe class="hide-for-small-only" width='100%' height='350px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mickt.h4im93nh/mm/zoompan.html'></iframe>
   <div class="attending-info" >
     <h1 >Attend</h1>
-    <p class="date">March 27, 2014</p>
-    <p>Ignite SF #9 <br>
+    <p class="date">January 22, 2015</p>
+    <p>Ignite SF #10 <br>
       Brava Theater <br>
       2781 24th St.<br>
       Tickets are $10</p>
@@ -78,10 +78,10 @@ redirect_from:
     <div class="large-8 medium-8 columns">
       <h1 >Speak</h1>
       <p>Ignite is about sharing your interests and passions with the community. Teach us something new, explain something your facinated by, enlighten us but make it quick. Each speaker gets 20 slides and 15 secs per slide. The slides automatically advance. It's a format the keeps things lively and interesting. </p>
-      <p>Submissions for Ignite SF 10 will start soon! <br /><a href="#attend">Make sure you attend Ignite SF 9!</a></p>
+      <p>Submissions for Ignite SF 10 are now open! </p>
     </div>
     <div class="large-4 medium-4 columns">
-<!--      <a href="https://docs.google.com/spreadsheet/viewform?formkey=dExuTHMzM2cta1dYZWhpZjNvamNzYkE6MA"><div class="button submit-topic">Submit your topic</div></a> -->
+      <a href="/submit"><div class="button submit-topic">Submit your topic</div></a>
     </div>
   </div>
   <div data-magellan-destination="pastignites"></div>
@@ -93,16 +93,37 @@ redirect_from:
     <div class="large-12 columns">
        <h1 >Next Event</h1>
        <div class="pastignite">
-        <a href="/ignitesf9"><h3>Ignite SF 9 - March 27th 2014 - Brava Theater</h3></a>
-        <p><a href="/ignitesf9">More info</a></p>
+        <a href="/ignitesf10"><h3>Ignite SF 10 - January 22nd 2015 - Brava Theater</h3></a>
+        <p><a href="/ignitesf10">More info</a></p>
        </div>
       <h1 >Past Events</h1>
+      <div class="pastignite">
+        <p class="small right light">March 27th 2014</p>
+        <a href='/ignitesf9'><h3>Ignite SF 9</h3></a>
+
+        {% for p in site.pages %}
+        {% if p.layout == "spark" %}
+        {% if p.ignitesf == 9 %}
+        <div class="pastspark" >
+          <div class="sparktitle">
+            <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/mqdefault.jpg" />
+            <h4><a href="{{p.url}}">{{p.title}}</a></h4>
+            <h6><img src="{{p.profileImageUrl}}" width="48"> {{p.name}}</h6>
+          </div>
+
+        </div>
+
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        <div class="clear"></div>
+      </div>
+
       <div class="pastignite">
         <p class="small right light">December 5th 2013</p>
         <a href='/ignitesf8'><h3>Ignite SF 8</h3></a>
 
         {% for p in site.pages %}
-
         {% if p.layout == "spark" %}
         {% if p.ignitesf == 8 %}
         <div class="pastspark" >
@@ -123,16 +144,4 @@ redirect_from:
     </div>
   </div>
   <div data-magellan-destination="sponsors"></div>
-</div>
-
-<div class="section-sponsors">
-  <div class="row sponsors">
-    <div class="large-12 columns">
-      <p>Ignite San Francisco is 100% volunteer run. We do it with some help from these great sponsors!</p>
-      <p>
-        <a href="http://www.campaignmonitor.com/"><img width="300" src="/imgs/sponsors/campaignmonitor_full_big.png"></a>
-        <a href="http://www.wireframepictures.com/"><img width="300" src="/imgs/sponsors/wireframe.png"></a>
-      </p>
-    </div>
-  </div>
 </div>

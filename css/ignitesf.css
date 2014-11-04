@@ -17,20 +17,20 @@ ul.title-area img{
     overflow:visible;
 }
 .sub-nav dd a{
+    color:#fff;
     font-size:20px;
     border-radius:0px;
     line-height:1.8em;
     border-radius:0px;
     padding:5px;
-    border-bottom:solid 5px #fff;
+    background:transparent;
     -webkit-transition:all 100ms;
     -moz-transition:all 100ms;
     transition:100ms;
 }
 .sub-nav dd.active a{
-    color:#333;
-    background:#fff;
-    border-bottom:solid 5px #e01e26;
+    color:#e01e26;
+    background:transparent;
     padding:5px;
     border-radius:0px;
     -webkit-transition:all 100ms;
@@ -38,19 +38,25 @@ ul.title-area img{
     transition:all 50ms;
 }
 .sub-nav dd.active a:hover{
-    background:#fff;
-    color:#999;
+    background:transparent;
+    color:#d01d16;
 }
+.sub-nav dd a:hover{
+    background:transparent;
+    color:#d01d16;
+}
+
 .promo{
-    max-height:500px;
+    height:100%;
     overflow:hidden;
     position:relative;
     background:#000;
     margin-bottom:0px;
+    top:-80px;
 }
 .promo-title{
     position:absolute;
-    top:50px;
+    top:150px;
     left:150px;
     color:#fff;
     max-width:900px;
@@ -80,28 +86,19 @@ video{
 }
 
 .top-bar{
-    height:75px;
-    background:#fff;
-    border-bottom:solid 1px #ddd;
+    height:65px;
     width:100%;
+    background: #333;
 }
+.top-bar.clear{
+    background: transparent;
+}
+
 .top-bar .row{
     max-width:62.5rem
 }
 .top-bar .title-area{
     margin-right:40px;
-}
-.top-bar-section li{
-    background:#fff;
-}
-.top-bar-section li:hover{
-    background:#fff;
-}
-
-.top-bar-section li a:not(.button):hover{
-    background:#fff;
-    color:#e3191b;
-
 }
 .top-bar-section li a:not(.button){
     background:#fff;

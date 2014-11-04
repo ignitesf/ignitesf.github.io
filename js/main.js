@@ -13,4 +13,14 @@ $(function(){
         setTimeout(switchHeading, 3500);
     }
     switchHeading();
+
+
+    $(window).scroll(function(e) {
+        console.log($(window).scrollTop() > $(window).height())
+        if($(window).scrollTop() > $(window).height()) {
+            $('nav.top-bar').removeClass('clear');
+        } else {
+            $('nav.top-bar').addClass('clear');
+        }
+    });
 });

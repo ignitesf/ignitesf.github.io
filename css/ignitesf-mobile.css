@@ -12,18 +12,22 @@ div.fixednav{
     position:fixed;
     top:0px;
 }
-.sub-nav{
-    margin-top:28px;
-}
+
 .sub-nav dd a{
     font-size:14px;
 }
-div.top-bar{
-    height:95px;
+nav.top-bar{
+    height:40px;
 }
 div.mainnav{
     background:#fff;
 }
 ul.title-area img{
     height:40px;
+}
+.top-bar {
+    background: #333;
+}
+.top-bar.clear {
+    background: #333;
 }

@@ -52,8 +52,8 @@
         <link rel="stylesheet" href="/css/ignitesf-mobile.css" media="all and (max-width:600px)" />
     </head>
     <body>
-      <div class="fixed fixedheader">
-        <nav class="top-bar" data-topbar>
+      <div class="fixed fixedheader" >
+        <nav class="top-bar clear" data-topbar >
             <div class="left">
               <ul class="title-area">
                 <li class="name">
@@ -63,6 +63,7 @@
               <section class="top-bar-section">
                 <div class="fixed fixednav" data-magellan-expedition="" style="background:none;">
                   <dl class="sub-nav right">
+                      <dd data-magellan-arrival="top"><a href="/"></a></dd>
                     <dd data-magellan-arrival="about"><a href="/#about">About</a></dd>
                     <dd data-magellan-arrival="attend"><a href="/#attend">Attend</a></dd>
                     <dd data-magellan-arrival="speak"><a href="/#speak">Speak</a></dd>
@@ -73,8 +74,21 @@
           </div>
         </nav>
       </div>
-
+<div data-magellan-destination="top"></div>
         {{ content }}
+
+<div class="section-sponsors">
+  <div class="row sponsors">
+    <div class="large-12 columns">
+      <p>Ignite San Francisco is 100% volunteer run. We do it with some help from these great sponsors!</p>
+      <p>
+        <a href="http://www.campaignmonitor.com/"><img width="300" src="/imgs/sponsors/campaignmonitor_full_big.png"></a>
+        <a href="http://www.wireframepictures.com/"><img width="300" src="/imgs/sponsors/wireframe.png"></a>
+      </p>
+    </div>
+  </div>
+</div>
+
 
         <script src="/js/jquery.js"></script>
         <script src="/js/foundation.min.js"></script>
