@@ -15,12 +15,16 @@ $(function(){
     switchHeading();
 
 
-    $(window).scroll(function(e) {
-        console.log($(window).scrollTop() > $(window).height())
+    function checkScrollHeight() {
         if($(window).scrollTop() > $(window).height()) {
             $('nav.top-bar').removeClass('clear');
         } else {
             $('nav.top-bar').addClass('clear');
         }
-    });
+    }
+    if(window.location.pathname === '/') {
+        $(window).scroll(checkScrollHeight);
+        checkScrollHeight();
+    }
+
 });
