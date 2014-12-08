@@ -18,8 +18,10 @@ $(function(){
     function checkScrollHeight() {
         if($(window).scrollTop() > $(window).height()) {
             $('nav.top-bar').removeClass('clear');
+            $('div.banner').removeClass('hide');
         } else {
             $('nav.top-bar').addClass('clear');
+            $('div.banner').addClass('hide');
         }
     }
     if(window.location.pathname === '/') {
