@@ -19,9 +19,11 @@ $(function(){
         if($(window).scrollTop() > $(window).height()) {
             $('nav.top-bar').removeClass('clear');
             $('div.banner').removeClass('hide');
+            $('ul.title-area').removeClass('hide');
         } else {
             $('nav.top-bar').addClass('clear');
             $('div.banner').addClass('hide');
+            $('ul.title-area').addClass('hide');
         }
     }
     if(window.location.pathname === '/') {

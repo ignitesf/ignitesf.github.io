@@ -9,6 +9,17 @@
 .button:hover{
     background-color:#a01e26;
 }
+.button.main {
+    margin-top:30px;
+    background-color:rgba(255, 255, 255, 0.1);
+    color:#fff;
+    border: solid 1px #ccc;
+}
+.button.main:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+    border: solid 1px #fff;
+}
+
 ul.title-area img{
     height:65px;
 }
@@ -50,9 +61,25 @@ ul.title-area img{
     height:100%;
     overflow:hidden;
     position:relative;
-    background:#000;
+    background: url('/imgs/background.png');
+    background-size: cover;
+    background-position: center;
     margin-bottom:0px;
     top:-80px;
+}
+.attribution{
+    font-size:16px;
+    color:#ccc;
+    position:absolute;
+    bottom:3px;
+    right:3px;
+}
+.logo.large{
+    text-align:center;
+    height:800px;
+}
+.logo.large img {
+    margin-top:100px;
 }
 .promo-title{
     position:absolute;
