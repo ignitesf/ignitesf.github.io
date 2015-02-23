@@ -7,6 +7,6 @@ twitter: ignitebayarea
 facebookid: 320076143286
 facebookurl: "https://www.facebook.com/ignitesanfrancisco"
 url: "http://ignitesanfrancisco.com"
-currentevent: 10
+currentevent: 11
 gems:
   - jekyll-redirect-from

@@ -11,7 +11,7 @@ redirect_from:
 <div class="promo ">
   <div class='logo large'>
       <img src="/imgs/logo_white_large.png" /> <br />
-      <a href='/ignitesf10/'><div class="button main">Ignite SF 10. January 22nd</div></a>
+      <a href='/submit'><div class="button main">Speak at Ignite SF 11 in May</div></a>
       <a class='attribution' href='https://www.flickr.com/photos/thomashawk/221827536/in/set-72157603703829094' target='_blank'>Photo By Thomas Hawk</a>
   </div>
 
@@ -60,12 +60,10 @@ redirect_from:
   <iframe class="hide-for-small-only" width='100%' height='350px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mickt.h4im93nh/mm/zoompan.html'></iframe>
   <div class="attending-info" >
     <h1 >Attend</h1>
-    <p class="date">January 22, 2015</p>
-    <p>Ignite SF #10 <br>
-      Brava Theater <br>
-      2781 24th St.<br>
+    <p class="date">TBD</p>
+    <p>Ignite SF #11 <br>
       Starts at 8pm</p>
-    <a href="http://tickets.ignitesanfrancisco.com"><div class="button">Sold Out</div></a>
+    <!--<a href="http://tickets.ignitesanfrancisco.com"><div class="button">Sold Out</div></a>-->
     <div  data-magellan-destination="speak"></div>
   </div>
 
@@ -76,7 +74,7 @@ redirect_from:
     <div class="large-8 medium-8 columns">
       <h1 >Speak</h1>
       <p>Ignite is about sharing your interests and passions with the community. Teach us something new, explain something your facinated by, enlighten us but make it quick. Each speaker gets 20 slides and 15 secs per slide. The slides automatically advance. It's a format the keeps things lively and interesting. </p>
-      <p>Submissions for Ignite SF 10 are now open! </p>
+      <p>Submissions for Ignite SF 11 are now open! </p>
     </div>
     <div class="large-4 medium-4 columns">
       <a href="/submit"><div class="button submit-topic">Submit your topic</div></a>
@@ -91,10 +89,31 @@ redirect_from:
     <div class="large-12 columns">
        <h1 >Next Event</h1>
        <div class="pastignite">
-        <a href="/ignitesf10"><h3>Ignite SF 10 - January 22nd 2015 - Brava Theater</h3></a>
-        <p><a href="/ignitesf10">More info</a></p>
+        <a href="/ignitesf10"><h3>Ignite SF 11 - </h3></a>
        </div>
       <h1 >Past Events</h1>
+      <div class="pastignite">
+        <p class="small right light">January 22nd 2015</p>
+        <a href='/ignitesf9'><h3>Ignite SF 10</h3></a>
+
+        {% for p in site.pages %}
+        {% if p.layout == "spark" %}
+        {% if p.ignitesf == 10 %}
+        <div class="pastspark" >
+        <div class="sparktitle">
+          <img align="left" class="video" src="http://img.youtube.com/vi/{{ p.videoId }}/mqdefault.jpg" />
+          <h4><a href="{{p.url}}">{{p.title}}</a></h4>
+          <h6><img src="{{p.profileImageUrl}}" width="48"> {{p.name}}</h6>
+        </div>
+
+        </div>
+
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        <div class="clear"></div>
+       </div>
+
       <div class="pastignite">
         <p class="small right light">March 27th 2014</p>
         <a href='/ignitesf9'><h3>Ignite SF 9</h3></a>
