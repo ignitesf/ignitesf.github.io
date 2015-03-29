@@ -13,25 +13,19 @@ twittercard: summary_large_image
     </div>
   </div>
 
-
+  {% if page.videoId %}
   <div class="video">
     <!-- Embed youtube video -->
     <div class="flex-video widescreen">
-
-      {% if page.videoId %}
       <iframe width="800" height="450" src="//www.youtube.com/embed/{{ page.videoId }}?feature=player_detailpage&color=red&showinfo=0&theme=light&autohide=1" frameborder="0" allowfullscreen></iframe>
-      {% else %}
-      <div class="novideo"><h2>Video coming soon</h2></div>
-      {% endif %}
     </div>
-
-    {{ page.videoUrl }}
   </div>
+  {% endif %}
 
   <div class="aboutEvent">
     <p>{{ content | markdownify }} </p>
   </div>
-
+  {% if page.eventStatus == "done" %}
       <div class="row videos">
         <div class="large-12 columns">
             <h3>Speakers</h3>
@@ -63,6 +57,16 @@ twittercard: summary_large_image
         </div>
       </div>
 
+  {% endif %}
+
+  {% if page.eventStatus == "upcoming" %}
+
+
+  <div style="width:100%; text-align:left;" >
+  <iframe src="http://www.eventbrite.com/tickets-external?eid=16281142335&ref=etckt&v=2" frameborder="0" height="256" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+</div>
+
+  {% endif %}
 
   <div class="row getinvolved">
 

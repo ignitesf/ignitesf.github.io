@@ -27,6 +27,7 @@ ul.title-area img{
 
 .sub-nav{
     overflow:visible;
+    padding-top:26px;
 }
 .sub-nav dd a{
     color:#fff;

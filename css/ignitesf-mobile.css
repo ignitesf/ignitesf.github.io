@@ -31,3 +31,6 @@ ul.title-area img{
 .top-bar.clear {
     background: #333;
 }
+.sub-nav{
+    padding-top:0px;
+}
