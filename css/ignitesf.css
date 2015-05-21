@@ -323,3 +323,7 @@ div.attending-info{
 .hide {
     display:none;
 }
+
+table{
+    width:100%;
+}
