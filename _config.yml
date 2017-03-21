@@ -1,6 +1,6 @@
 name: Ignite San Francisco
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 relative_permalinks: false
 next_event_date: "May 17th"
 next_event_year: 2017
