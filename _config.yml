@@ -1,8 +1,6 @@
 name: Ignite San Francisco
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-pygments: true
+markdown: kramdown
+highlighter: pygments
 relative_permalinks: false
 next_event_date: "May 17th"
 next_event_year: 2017
