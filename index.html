@@ -12,8 +12,8 @@ redirect_from:
 <div class="promo ">
   <div class='logo large'>
       <img src="/imgs/logo_white_large.png" /> <br />
-      <!--<a href='https://www.eventbrite.com/e/ignite-sf-12-tickets-27896504195'>-->
-        <div class="button main disabled">Ignite SF 13 is May 17th!</div>
+      <!--<a href="{{ site.ticketurl }}">-->
+        <div class="button main disabled">Ignite SF {{ site.next_event_number}} is {{ site.next_event_date }}!</div>
       <!--</a>-->
       <a class='attribution' href='https://www.flickr.com/photos/thomashawk/221827536/in/set-72157603703829094' target='_blank'>Photo By Thomas Hawk</a>
   </div>
@@ -72,12 +72,13 @@ redirect_from:
   {% endif %}
   <div class="attending-info" >
     <h1>Attend</h1>
-    <p class="date">May 17th 2017</p>
-    <p>Ignite SF 13<br>
-      Doors at 7pm <br />
+    <p class="date">{{ site.next_event_date }} {{ site.next_event_year }}</p>
+    <p>
+      Ignite SF {{ site.next_event_number }}<br>
+      Doors at 7pm <br>
       Marine Memorial Theatre
-      </p>
-    <!--<a href="https://www.eventbrite.com/e/ignite-sf-12-tickets-27896504195">-->
+    </p>
+    <!--<a href="{{ site.ticketurl }}">-->
       <div class="button disabled">Tickets Available Soon!</div>
     <!--</a>-->
     <div  data-magellan-destination="speak"></div>
