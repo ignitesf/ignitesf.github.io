@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Ignite San Francisco
+showmapbox: true
 twittercard: summary_large_image
 twitter: ignitebayarea
 twittercardimage: "http://www.ignitesanfrancisco.com/imgs/ignite_logo.png"
@@ -65,7 +66,10 @@ redirect_from:
 <a name="attend" ></a>
 <div style="padding:37px"></div>
 <div class="section-attending">
-  <iframe class="hide-for-small-only" width='100%' height='350px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/mickt.h4im93nh/mm/zoompan.html'></iframe>
+  {% if page.showmapbox %}
+    <!-- Mapbox -->
+    <div id='map' class="hide-for-small-only"></div>
+  {% endif %}
   <div class="attending-info" >
     <h1>Attend</h1>
     <p class="date">May 17th 2017</p>

@@ -6,6 +6,11 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        {% if page.showmapbox %}
+          <!-- Mapbox -->
+          <script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+          <link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+        {% endif %}
 
         {% if page.twittercard %}
         <!-- twitter card -->
@@ -113,5 +118,42 @@ Want to attend Ignite SF #10?  <a href="http://tickets.ignitesanfrancisco.com"><
         ga('send', 'pageview');
 
       </script>
+
+      {% if page.showmapbox %}
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiYmV0YXRldHJhIiwiYSI6ImNqMGptd3B5ajAxa3MycXFwemllaWV6cWwifQ.jEc6feyFIizXkRW3IErDow';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            center: [-122.410620, 37.788840],
+            zoom: 13,
+            style: 'mapbox://styles/mapbox/dark-v9',
+            attributionControl: false
+          });
+          map.on('load', function () {
+            map.addLayer({
+              'id': 'theater',
+              'type': 'circle',
+              'source': {
+                'type': 'geojson',
+                'data': {
+                  'type': 'Feature',
+                  'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.410500, 37.788800],
+                  }
+                }
+              },
+              'paint': {
+                // make circles larger as the user zooms from z12 to z22
+                'circle-radius': {
+                  'base': 1.75,
+                  'stops': [[12, 4], [22, 180]]
+                },
+                'circle-color': '#e01e26'
+              }
+            });
+          });
+        </script>
+      {% endif %}
     </body>
 </html>
