@@ -13,7 +13,9 @@ redirect_from:
   <div class='logo large'>
       <img src="/imgs/logo_white_large.png" /> <br />
       <!--<a href="{{ site.ticketurl }}">-->
-        <div class="button main disabled">Ignite SF {{ site.next_event_number}} is {{ site.next_event_date }}!</div>
+        <div class="button main disabled">
+          Ignite SF {{ site.next_event_number}} is {{ site.next_event_date }}. Tickets available soon!
+        </div>
       <!--</a>-->
       <a class='attribution' href='https://www.flickr.com/photos/thomashawk/221827536/in/set-72157603703829094' target='_blank'>Photo By Thomas Hawk</a>
   </div>
@@ -42,8 +44,10 @@ redirect_from:
         <form action="http://ignitesanfrancisco.us2.list-manage.com/subscribe/post?u=a6f785ee4e1b93c767a41d660&amp;id=307b345ed9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
           <div class="mc-field-group">
-	        <label for="mce-EMAIL"> Get emailed about upcoming events:</label>
-	        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          <label for="mce-EMAIL">
+            Be the first to hear about Ignite SF events:
+          </label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button">
           </div>
 	      <div id="mce-responses" class="clear">
@@ -72,7 +76,7 @@ redirect_from:
   {% endif %}
   <div class="attending-info" >
     <h1>Attend</h1>
-    <p class="date">{{ site.next_event_date }} {{ site.next_event_year }}</p>
+    <p class="date">{{ site.next_event_date_short }}, {{ site.next_event_year }}</p>
     <p>
       Ignite SF {{ site.next_event_number }}<br>
       Doors at 7pm <br>
@@ -115,7 +119,7 @@ redirect_from:
        <h1>Next Event</h1>
        <div class="pastignite">
         <p class="small right light">May 17th 2017</p>
-        <a href="/ignitesf12"><h3>Ignite SF 13</h3></a>
+        <a href="/ignitesf13"><h3>Ignite SF 13</h3></a>
        </div>
       <h1>Past Events</h1>
       <div class="pastignite">
@@ -124,11 +128,11 @@ redirect_from:
       </div>
       <div class="pastignite">
        <p class="small right light">May 26th 2016</p>
-       <a href="/ignitesf10"><h3>Ignite SF 11</h3></a>
+       <a href="/ignitesf11"><h3>Ignite SF 11</h3></a>
       </div>
       <div class="pastignite">
         <p class="small right light">January 22nd 2015</p>
-        <a href='/ignitesf9'><h3>Ignite SF 10</h3></a>
+        <a href='/ignitesf10'><h3>Ignite SF 10</h3></a>
 
         {% for p in site.pages %}
         {% if p.layout == "spark" %}

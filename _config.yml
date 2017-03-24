@@ -3,6 +3,7 @@ markdown: kramdown
 highlighter: rouge
 relative_permalinks: false
 next_event_date: "May 17th"
+next_event_date_short: "May 17"
 next_event_year: 2017
 next_event_number: 13
 twitter: theignitesf
