@@ -10,6 +10,7 @@ twitter: theignitesf
 facebookid: 320076143286
 facebookurl: "https://www.facebook.com/ignitesanfrancisco"
 url: "http://ignitesanfrancisco.com"
-ticketurl: "https://www.eventbrite.com/e/ignite-sf-12-tickets-27896504195"
+ticket_url: "https://www.eventbrite.com/e/ignite-sf-12-tickets-27896504195"
+proposal_form_url: "https://docs.google.com/forms/d/e/1FAIpQLScMB4HFggJSntsTNK26cuCyyA2myh9sz66ZOUw513BDlDRE8g/viewform?c=0&w=1&embedded=true"
 gems:
   - jekyll-redirect-from
