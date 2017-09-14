@@ -2,15 +2,16 @@ name: Ignite San Francisco
 markdown: kramdown
 highlighter: rouge
 relative_permalinks: false
-next_event_date: "May 17th"
-next_event_date_short: "May 17"
+next_event_date: "October 12th"
+next_event_date_short: "October 12"
 next_event_year: 2017
-next_event_number: 13
+next_event_number: 14
+venue: "Brava Theatre"
 twitter: theignitesf
 facebookid: 320076143286
 facebookurl: "https://www.facebook.com/ignitesanfrancisco"
 url: "http://ignitesanfrancisco.com"
-ticket_url: "https://www.eventbrite.com/e/ignite-sf-13-tickets-33586100932"
+ticket_url: "https://www.eventbrite.com/e/ignite-sf-14-tickets-37864840758"
 proposal_form_url: "https://docs.google.com/forms/d/e/1FAIpQLScMB4HFggJSntsTNK26cuCyyA2myh9sz66ZOUw513BDlDRE8g/viewform?c=0&w=1&embedded=true"
 gems:
   - jekyll-redirect-from
